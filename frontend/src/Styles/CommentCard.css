@@ -1,0 +1,200 @@
+/* === Color Palette Variables === */
+:root {
+	--primary: #e63946;
+	--background: #f1faee;
+	--accent: #a8dadc;
+	--highlight: #457b9d;
+	--deep: #1d3557;
+	--white: #ffffff;
+	--black: #000000; /* Kept for reference but not actively used */
+}
+
+/* === Comment Card === */
+.comment-item {
+	background-color: var(--deep);
+	border-radius: 12px;
+	padding: 12px;
+	margin-bottom: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s ease;
+	border-left: 3px solid var(--primary);
+	color: var(--white);
+}
+
+.comment-item:hover {
+	transform: translateY(-2px);
+	background-color: rgba(29, 53, 87, 0.9);
+	box-shadow: 0 4px 12px rgba(255, 69, 0, 0.2);
+}
+
+.comment-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 16px;
+	width: 100%;
+}
+
+.comment-avatar {
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	border: 2px solid var(--primary);
+	border-radius: 50%;
+}
+
+.comment-avatar:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.3);
+}
+
+.comment-user {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--primary) !important;
+	margin-bottom: 4px;
+}
+
+.comment-text {
+	font-size: 15px;
+	color: var(--accent) !important;
+	margin: 0;
+	line-height: 1.4;
+	word-break: break-word;
+}
+
+.comment-time {
+	font-size: 12px;
+	color: #ccc;
+	margin-top: 6px;
+}
+
+.comment-actions,
+.edit-actions {
+	display: flex;
+	gap: 4px;
+}
+
+/* === Modal === */
+.comments-modal .ant-modal-content {
+	background-color: var(--deep);
+}
+
+.comments-modal .ant-modal-header {
+	background-color: var(--deep);
+	border-bottom: 1px solid #333;
+}
+
+.comments-modal .ant-modal-title,
+.comments-modal .ant-modal-close {
+	color: var(--white);
+}
+
+.comments-modal .ant-list {
+	max-height: 60vh;
+	overflow-y: auto;
+	padding-right: 8px;
+}
+
+.comments-modal .ant-list::-webkit-scrollbar {
+	width: 6px;
+}
+
+.comments-modal .ant-list::-webkit-scrollbar-thumb {
+	background-color: #555;
+	border-radius: 3px;
+}
+
+.comments-modal .ant-list::-webkit-scrollbar-track {
+	background-color: #333;
+}
+
+/* === Inputs === */
+.comments-modal .ant-input {
+	background-color: #333;
+	color: var(--white);
+	border: 1px solid #444;
+}
+
+.comments-modal .ant-input:focus,
+.comments-modal .ant-input-focused {
+	border-color: var(--primary);
+	box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.2);
+}
+
+/* === Comment Input === */
+.comment-input {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+
+.comment-input .ant-input {
+	flex: 1;
+	background-color: #333;
+	color: var(--white);
+	border: 1px solid #444;
+	border-radius: 16px;
+	padding: 8px 16px;
+}
+
+.comment-input .ant-btn-primary {
+	background-color: var(--background);
+	color: var(--deep);
+	border: 2px solid var(--deep);
+	box-shadow: inset 0 -2px 0 var(--highlight);
+	font-weight: 600;
+}
+
+.comment-input .ant-btn-primary:hover {
+	background-color: var(--accent);
+	border-color: var(--deep);
+	box-shadow: inset 0 -2px 0 var(--highlight);
+	color: var(--white);
+}
+
+/* === Post Actions === */
+.interaction-button {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 12px;
+	border: none;
+	background-color: transparent;
+	color: var(--white);
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.2s ease;
+}
+
+.interaction-button:hover {
+	background-color: #333;
+}
+
+.interaction-button.liked {
+	color: var(--primary);
+}
+
+.action-buttons {
+	display: flex;
+	gap: 8px;
+}
+
+/* === Base Form Styling === */
+label {
+	color: var(--white) !important;
+}
+
+input {
+	color: var(--accent) !important;
+	background-color: white!important;
+}
+
+button {
+	color: var(--deep) !important;
+	background-color: var(--background) !important;
+	border: 2px solid var(--deep);
+	box-shadow: inset
+}
