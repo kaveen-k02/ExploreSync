@@ -1,0 +1,75 @@
+/* CreateSkillPlanBox.css */
+.skill-plan-box {
+	background-color: #333;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 30px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: 1px solid rgba(255, 69, 0, 0.2);
+}
+
+.skill-plan-box:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+	border-color: rgba(255, 69, 0, 0.4);
+}
+
+.post_top {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.user-image {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #9932aa;
+}
+
+.skill-input {
+	flex: 1;
+	background-color: #444;
+	border: none;
+	border-radius: 30px;
+	padding: 12px 20px;
+	color: #a3a0a0;
+	font-size: 0.95rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.ant-picker-input {
+	color: #a3a0a0 !important;
+}
+
+.skill-input::placeholder {
+	color: #a3a0a0;
+}
+
+.skill-input:hover {
+	background-color: #555;
+}
+
+@media (max-width: 768px) {
+	.skill-plan-box {
+		padding: 15px;
+	}
+
+	.post_top {
+		gap: 10px;
+	}
+
+	.user-image {
+		width: 40px;
+		height: 40px;
+	}
+
+	.skill-input {
+		padding: 10px 15px;
+		font-size: 0.9rem;
+	}
+}
