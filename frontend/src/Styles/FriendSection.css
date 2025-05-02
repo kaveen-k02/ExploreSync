@@ -1,0 +1,149 @@
+/* FriendsSection.css */
+.friends-section {
+	padding: 30px;
+	background-color: #2a2a2a;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.friends-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.friends-icon {
+	font-size: 24px;
+	color: #9932aa;
+	margin-right: 15px;
+}
+
+.friends-header h2 {
+	color: #fff;
+	margin: 0;
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+}
+
+.friends-count {
+	background: linear-gradient(135deg, #9932aa, #9932aa);
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 30px;
+	font-size: 0.8rem;
+	margin-left: 15px;
+	font-weight: 600;
+}
+
+.friends-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 20px;
+}
+
+.friend-card {
+	background-color: #333;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	position: relative;
+	border: 1px solid rgba(255, 69, 0, 0.2);
+}
+
+.friend-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	border-color: rgba(255, 69, 0, 0.4);
+}
+
+.friend-favorite {
+	background: linear-gradient(to bottom, #333 0%, #2a2a2a 100%);
+	border: 1px solid rgba(255, 69, 0, 0.5);
+}
+
+.favorite-badge {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #9932aa;
+	font-size: 18px;
+	filter: drop-shadow(0 2px 5px rgba(255, 140, 0, 0.5));
+}
+
+.friend-card-header {
+	display: flex;
+	justify-content: center;
+	padding: 20px 20px 10px;
+}
+
+.friend-avatar {
+	border: 3px solid #9932aa;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.friend-card-body {
+	padding: 10px 20px 20px;
+	text-align: center;
+}
+
+.friend-name {
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
+
+.friend-status {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.friend-status-item {
+	color: #aaa;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.friend-bio {
+	color: #ddd;
+	font-size: 0.9rem;
+	line-height: 1.4;
+	max-height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.friend-card-footer {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.friend-action-btn {
+	color: #ddd;
+	transition: all 0.3s ease;
+}
+
+.friend-action-btn:hover {
+	color: #9932aa;
+	background-color: rgba(255, 69, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+	.friends-grid {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+
+	.friends-section {
+		padding: 20px 15px;
+	}
+}

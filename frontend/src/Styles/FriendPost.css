@@ -1,0 +1,159 @@
+.friends-post {
+	background-color: #2a2a2a;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	margin-bottom: 20px;
+}
+
+.post-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+}
+
+.user-avatar {
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.user-avatar:hover {
+	transform: scale(1.05);
+}
+
+.user-details {
+	margin-left: 12px;
+}
+
+.username {
+	margin: 0;
+	font-weight: 600;
+}
+
+.post-time {
+	font-size: 12px;
+	color: #8c8c8c;
+}
+
+.post-content {
+	margin-bottom: 16px;
+	font-size: 14px;
+	color: #d1c5c5f6;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.post-media {
+	margin-bottom: 16px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.post-media img,
+.post-media video {
+	width: 100%;
+	max-height: 406px;
+	object-fit: contain;
+	background-color: #444444;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.post-stats {
+	display: flex;
+	justify-content: space-between;
+	color: #8c8c8c;
+	font-size: 14px;
+	padding: 0 8px;
+}
+
+.likes-count,
+.comments-count {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.post-actions {
+	padding: 0 8px;
+}
+
+.action-buttons {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.interaction-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	background: none;
+	border: none;
+	border-radius: 20px;
+	padding: 8px 16px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #9932aa;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.interaction-button:hover {
+	background-color: #f0f2f5;
+}
+
+.interaction-button.liked {
+	color: #9932aa;
+}
+
+.interaction-button.liked:hover {
+	background-color: rgba(24, 144, 255, 0.1);
+}
+
+.comment-input {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 8px;
+}
+
+.comment-input .ant-input {
+	border-radius: 18px;
+	background-color: #ff44002a;
+	padding: 8px 16px;
+	border: 1px solid #9932aa;
+}
+
+.comments-modal .ant-modal-body {
+	max-height: 70vh;
+	overflow-y: auto;
+}
+
+.comment-avatar .ant-avatar {
+	width: 32px !important;
+	height: 32px !important;
+	min-width: 32px !important;
+	min-height: 32px !important;
+}
+
+.posts-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.anticon svg {
+	display: inline-block;
+	color: #8c8c8c;
+}
