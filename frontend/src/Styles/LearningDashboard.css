@@ -1,0 +1,186 @@
+:root {
+	--red: #e63946;
+	--off-white: #f1faee;
+	--light-cyan: #a8dadc;
+	--blue: #457b9d;
+	--dark-blue: #1d3557;
+}
+
+/* === Layout === */
+.learning-dashboard {
+	background-color: var(--dark-blue);
+	color: var(--off-white);
+	padding: 20px;
+	min-height: 100vh;
+}
+
+.dashboard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.dashboard-header h2 {
+	color: var(--off-white);
+}
+
+/* === Tabs === */
+.learning-tabs .ant-tabs-tab {
+	color: var(--off-white) !important;
+}
+
+.learning-tabs .ant-tabs-tab-active {
+	color: var(--light-cyan) !important;
+}
+
+.learning-tabs .ant-tabs-ink-bar {
+	background-color: var(--light-cyan);
+}
+
+.learning-tabs .ant-tabs-tab-btn:hover {
+	color: var(--red) !important;
+}
+
+/* === Stats Section === */
+.stats-section .ant-card {
+	background-color: var(--blue) !important;
+	border: none;
+}
+
+.stats-section .ant-statistic-title {
+	color: var(--light-cyan);
+}
+
+.stats-section .ant-statistic-content {
+	color: var(--off-white);
+}
+
+/* === Learning Cards === */
+.learning-grid {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.learning-card {
+	background-color: var(--blue) !important;
+	border: 1px solid var(--light-cyan);
+	color: var(--off-white);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.learning-card:hover {
+	border-color: var(--red);
+}
+
+.learning-card-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: bold;
+	color: var(--off-white);
+}
+
+.template-icon svg {
+	font-size: 18px;
+	color: inherit;
+}
+
+.template-tag {
+	font-weight: 600;
+	color: var(--red);
+	margin-bottom: 4px;
+}
+
+.description {
+	color: var(--light-cyan);
+	min-height: 60px;
+}
+
+.timestamp {
+	font-size: 12px;
+	color: var(--light-cyan);
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+}
+
+.card-footer .ant-btn-link {
+	color: var(--light-cyan);
+	padding: 0;
+}
+
+/* === Modal === */
+.ant-modal-content {
+	background-color: var(--dark-blue) !important;
+	color: var(--off-white);
+}
+
+.ant-modal-header {
+	background-color: var(--dark-blue) !important;
+	border-bottom: 1px solid var(--blue);
+}
+
+.ant-modal-title {
+	color: var(--off-white) !important;
+}
+
+/* === Buttons === */
+.ant-btn-primary {
+	background-color: var(--light-cyan);
+	border: 2px solid var(--dark-blue);
+	color: var(--dark-blue);
+	box-shadow: inset 0 -2px 0 var(--blue);
+	font-weight: 600;
+}
+
+.ant-btn-primary:hover {
+	background-color: var(--red);
+	border-color: var(--dark-blue);
+	color: var(--off-white);
+	box-shadow: inset 0 -2px 0 var(--light-cyan);
+}
+
+/* === Inputs (Updated) === */
+.ant-input,
+.ant-input-affix-wrapper {
+	background-color: var(--dark-blue);
+	color: var(--off-white);
+	border: 1px solid var(--light-cyan);
+	border-radius: 8px;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus {
+	border-color: var(--red);
+	box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.2);
+}
+
+.ant-input-disabled {
+	background-color: var(--dark-blue);
+	color: #666;
+	border: 1px solid #444;
+}
+
+.ant-input-placeholder {
+	color: var(--light-cyan);
+}
+
+.ant-input-group-addon {
+	background-color: var(--dark-blue);
+	color: var(--off-white);
+}
+
+/* === Loading === */
+.loading-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
