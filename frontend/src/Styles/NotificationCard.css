@@ -1,0 +1,60 @@
+/* Notifications.css */
+.notifications-container {
+	padding: 30px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.notifications-title {
+	color: #9932aa;
+	margin-bottom: 30px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	position: relative;
+	display: inline-block;
+}
+
+.notifications-title:after {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	bottom: -10px;
+	left: 0;
+	background: linear-gradient(135deg, #9932aa, #9932aa);
+}
+
+.notification-item {
+	background-color: #333;
+	margin-bottom: 15px;
+	padding: 15px 20px;
+	border-radius: 8px;
+	border-left: 4px solid #9932aa;
+	transition: all 0.3s ease;
+}
+
+.notification-item:hover {
+	background-color: #444;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.notification-message {
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 1rem;
+}
+
+.notification-description {
+	color: #aaa;
+	font-size: 0.9rem;
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.notifications-container {
+		padding: 20px 15px;
+	}
+}
