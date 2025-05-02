@@ -1,0 +1,78 @@
+/* NotificationsDropdown.css */
+.notification-dropdown-trigger {
+	position: relative;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.notification-icon {
+	font-size: 20px;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+.notification-dropdown-trigger:hover .notification-icon {
+	color: #9932aa;
+}
+
+.notification-badge {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	min-width: 18px;
+	height: 18px;
+	background: linear-gradient(135deg, #9932aa, #9932aa);
+	color: #fff;
+	border-radius: 50%;
+	font-size: 11px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	box-shadow: 0 2px 5px rgba(255, 69, 0, 0.5);
+}
+
+.notification-dropdown-menu {
+	background-color: #333;
+	border: 1px solid rgba(255, 69, 0, 0.3);
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	overflow: hidden;
+	min-width: 320px;
+	max-width: 400px;
+}
+
+.notification-menu-item {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 12px 15px;
+	transition: all 0.3s ease;
+}
+
+.notification-menu-item:hover {
+	background-color: rgba(255, 69, 0, 0.1);
+}
+
+.notification-title {
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 0.95rem;
+}
+
+.notification-description {
+	color: #aaa;
+	font-size: 0.85rem;
+	margin: 5px 0 0;
+	line-height: 1.4;
+}
+
+.empty-dropdown-message {
+	padding: 20px;
+	color: #999;
+}
+
+@media (max-width: 768px) {
+	.notification-dropdown-menu {
+		min-width: 280px;
+	}
+}
