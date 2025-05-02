@@ -1,0 +1,96 @@
+/* TopBox.css */
+.top-box {
+	background: #1d3557; /* Dark blue background */
+	padding: 24px;
+	border-radius: 16px;
+	margin-bottom: 30px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+	border: 1px solid #457b9d; /* Muted blue border */
+}
+
+.top-box-header {
+	color: #e63946; /* Red header text */
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 1px;
+	position: relative;
+	display: inline-block;
+}
+
+.top-box-header:after {
+	content: "";
+	position: absolute;
+	width: 40%;
+	height: 3px;
+	bottom: -10px;
+	left: 0;
+	background: linear-gradient(135deg, #e63946, #457b9d);
+}
+
+.stories-container {
+	display: flex;
+	overflow-x: auto;
+	padding: 15px 0;
+	scrollbar-width: thin;
+	scrollbar-color: #e63946 #457b9d; /* Red thumb, blue track */
+}
+
+.stories-container::-webkit-scrollbar {
+	height: 6px;
+}
+
+.stories-container::-webkit-scrollbar-track {
+	background: #457b9d; /* Muted blue track */
+	border-radius: 4px;
+}
+
+.stories-container::-webkit-scrollbar-thumb {
+	background-color: #e63946; /* Red scrollbar thumb */
+	border-radius: 4px;
+}
+
+.my_story_card {
+	min-width: 120px;
+	height: 200px;
+	margin-right: 16px;
+	background: #1d3557; /* Same dark blue for cards */
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: 2px dashed #a8dadc; /* Teal dashed border */
+}
+
+.my_story_card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(230, 57, 70, 0.3); /* Red hover shadow */
+	background: #457b9d; /* Muted blue on hover */
+}
+
+.create-story-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #e63946, #457b9d);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.create-story-text {
+	font-weight: 600;
+	color: #a8dadc; /* Teal text */
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
