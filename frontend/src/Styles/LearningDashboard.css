@@ -122,6 +122,10 @@
 	color: var(--off-white);
 }
 
+.ant-modal .ant-descriptions-item-label {
+	color:#f1faee
+}
+
 .ant-modal-header {
 	background-color: var(--dark-blue) !important;
 	border-bottom: 1px solid var(--blue);

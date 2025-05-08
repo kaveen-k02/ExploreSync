@@ -4,6 +4,7 @@ import { useSnapshot } from "valtio";
 import state from "../../Utils/Store";
 import LearningService from "../../Services/LearningService";
 
+
 import moment from "moment";
 import { 
   EditOutlined, 
@@ -232,7 +233,7 @@ const LearningDetailsModal = ({ onRefresh }) => {
       case "project":
         return (
           <>
-            <Descriptions.Item label="Project Name">{learning.projectName}</Descriptions.Item>
+            <Descriptions.Item label="Project Name" color="white">  <span style={{ color: 'white' }}>{learning.projectName}</span></Descriptions.Item>
             {learning.projectLink && (
               <Descriptions.Item label="Project Link">
                 <a href={learning.projectLink} target="_blank" rel="noopener noreferrer">
@@ -260,9 +261,9 @@ const LearningDetailsModal = ({ onRefresh }) => {
       case "workshop":
         return (
           <>
-            <Descriptions.Item label="Workshop">{learning.workshopName}</Descriptions.Item>
-            <Descriptions.Item label="Provider">{learning.provider}</Descriptions.Item>
-            <Descriptions.Item label="Duration">{learning.duration}</Descriptions.Item>
+            <Descriptions.Item label="Workshop"><span style={{ color: 'white' }}>{learning.workshopName}</span></Descriptions.Item>
+            <Descriptions.Item label="Provider"><span style={{ color: 'white' }}>{learning.provider}</span></Descriptions.Item>
+            <Descriptions.Item label="Duration"><span style={{ color: 'white' }}>{learning.duration}</span></Descriptions.Item>
           </>
         );
       default:
@@ -276,24 +277,24 @@ const LearningDetailsModal = ({ onRefresh }) => {
     return (
       <div className="learning-details">
         <Descriptions title={learning.topic} bordered column={1} className="descriptions">
-          <Descriptions.Item label="Description">{learning.description}</Descriptions.Item>
-          <Descriptions.Item label="Status">{learning.status}</Descriptions.Item>
+          <Descriptions.Item label="Description"><span style={{ color: 'white' }}>{learning.description}</span></Descriptions.Item>
+          <Descriptions.Item label="Status"><span style={{ color: 'white' }}>{learning.status}</span></Descriptions.Item>
           {learning.resourceLink && (
             <Descriptions.Item label="Resource Link">
               <a href={learning.resourceLink} target="_blank" rel="noopener noreferrer">
-                {learning.resourceLink} <LinkOutlined />
+              <span style={{ color: 'white' }}>{learning.resourceLink} </span><LinkOutlined />
               </a>
             </Descriptions.Item>
           )}
           {renderTemplateDetails()}
           {learning.nextSteps && (
-            <Descriptions.Item label="Next Steps">{learning.nextSteps}</Descriptions.Item>
+            <Descriptions.Item label="Next Steps"><span style={{ color: 'white' }}>{learning.nextSteps}</span></Descriptions.Item>
           )}
           {learning.reflection && (
-            <Descriptions.Item label="Reflection">{learning.reflection}</Descriptions.Item>
+            <Descriptions.Item label="Reflection"><span style={{ color: 'white' }}>{learning.reflection}</span></Descriptions.Item>
           )}
           <Descriptions.Item label="Created At">
-            {moment(learning.timestamp).format("MMMM D, YYYY [at] h:mm A")}
+          <span style={{ color: 'white' }}>{moment(learning.timestamp).format("MMMM D, YYYY [at] h:mm A")}</span>
           </Descriptions.Item>
         </Descriptions>
         

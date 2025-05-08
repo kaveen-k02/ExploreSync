@@ -1,0 +1,5 @@
+.white-descriptions .ant-descriptions-title,
+.white-descriptions .ant-descriptions-item-label,
+.white-descriptions .ant-descriptions-item-content {
+  color: white !important;
+}
