@@ -133,7 +133,7 @@
 .comment-input .ant-input {
 	flex: 1;
 	background-color: #333;
-	color: var(--white);
+	color: var(--black);
 	border: 1px solid #444;
 	border-radius: 16px;
 	padding: 8px 16px;
